@@ -13,6 +13,7 @@ import {
   GiEclipse,
   GiSnowing,
   GiHolyHandGrenade,
+  GiDoorway,
   GiUndergroundCave,
   GiVillage,
   GiAncientRuins,
@@ -138,7 +139,7 @@ const Adventure = ({ onBack }) => {
   const categoryIcons = {
     'Traveling': GiPathDistance,
     'Exploration': GiCompass,
-    'Entering New Locations': GiHolyHandGrenade,
+    'Entering New Locations': GiDoorway,
     'Discovering Treasures': GiChest,
     'Overcoming Obstacles': GiMountainClimbing,
     'Natural Phenomena': GiLightningStorm
@@ -232,7 +233,7 @@ const Adventure = ({ onBack }) => {
         {/* Locations Section */}
         <div className="bg-slate-800 rounded-lg p-6 mb-8">
           <h2 className="text-xl font-bold text-green-400 mb-4 flex items-center gap-2">
-            <GiHolyHandGrenade className="w-6 h-6" />
+            <GiDoorway className="w-6 h-6" />
             Entering New Locations
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
