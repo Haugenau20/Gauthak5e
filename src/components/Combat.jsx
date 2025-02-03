@@ -212,7 +212,7 @@ const Combat = ({ onBack, onViewSpells }) => {
           </div>
           <div className="mt-6 text-center">
             <button
-              onClick={onViewSpells}
+              onClick={() => onViewSpells()}
               className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 
                        hover:from-purple-500 hover:to-blue-500 
                        rounded-lg text-white font-medium transition-all

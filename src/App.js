@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import LandingPage from './components/LandingPage';
 import Combat from './components/Combat';
+import Spells from './components/Spells';
 
 // Placeholder components for other pages
 const Adventure = ({ onBack }) => (
@@ -79,7 +80,7 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case 'combat':
-        return <Combat onBack={handleBack} onViewSpells={() => handleNavigation('spells', 'combat')} />;
+        return <Combat onBack={handleBack} onViewSpells={() => handleNavigation('spells')} />;
       case 'adventure':
         return <Adventure onBack={handleBack} />;
       case 'social':
@@ -92,6 +93,8 @@ function App() {
         return <ChallengeAndTriumph onBack={handleBack} />;
       case 'rest':
         return <RestAndReflection onBack={handleBack} />;
+      case 'spells':
+        return <Spells onBack={handleBack} />;
       default:
         return <LandingPage onNavigate={handleNavigation} />;
     }

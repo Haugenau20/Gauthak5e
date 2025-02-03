@@ -80,6 +80,16 @@ const LandingPage = ({ onNavigate }) => {
       gradientTo: 'to-cyan-800',
       hoverFrom: 'hover:from-cyan-500',
       hoverTo: 'hover:to-cyan-700'
+    },
+    {
+      id: 'spells',
+      title: 'Spells',
+      description: 'Master your magical repertoire',
+      icon: GiSpellBook,
+      gradientFrom: 'from-indigo-600',
+      gradientTo: 'to-indigo-900',
+      hoverFrom: 'hover:from-indigo-500',
+      hoverTo: 'hover:to-indigo-800'
     }
   ];
 
