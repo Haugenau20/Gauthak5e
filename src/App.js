@@ -4,15 +4,9 @@ import './App.css';
 import LandingPage from './components/LandingPage';
 import Combat from './components/Combat';
 import Spells from './components/Spells';
+import Adventure from './components/Adventure';
 
 // Placeholder components for other pages
-const Adventure = ({ onBack }) => (
-  <div className="min-h-screen bg-slate-900 p-8">
-    <button onClick={onBack} className="text-white">Back</button>
-    <h1 className="text-white text-2xl">Adventure Page (Coming Soon)</h1>
-  </div>
-);
-
 const Social = ({ onBack }) => (
   <div className="min-h-screen bg-slate-900 p-8">
     <button onClick={onBack} className="text-white">Back</button>
