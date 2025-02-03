@@ -9,7 +9,7 @@ import {
   GiAngelWings,
   GiMeditation
 } from "react-icons/gi";
-import LightningOverlay from './LightningOverlay.jsx';
+import LightningOverlay from './LightningOverlay';
 
 const RitualAndMagic = ({ onBack, onViewSpells }) => {
   const ritualPhrases = {
