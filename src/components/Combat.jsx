@@ -181,22 +181,59 @@ const Combat = ({ onBack, onViewSpells }) => {
           {Object.entries(combatPhrases).map(([category, content]) => {
             const IconComponent = categoryIcons[category];
             if (category !== 'Combat Oriented Spells') {
-              return (
-                <button
-                  key={category}
-                  onClick={() => pickRandomPhrase(category)}
-                  disabled={isAnimating}
-                  className="p-6 bg-gradient-to-br from-red-600 to-red-900 
-                           hover:from-red-500 hover:to-red-800 
-                           rounded-lg transition-all group"
-                >
-                  <div className="flex flex-col items-center gap-3">
-                    <IconComponent className="w-8 h-8 text-red-200 
-                                           group-hover:scale-110 transition-transform" />
-                    <span className="text-lg font-medium text-white text-center">{category}</span>
-                  </div>
-                </button>
-              );
+                // Special styling for Javelin of Lightning
+                if (category === 'Javelin of Lightning') {
+                  return (
+                    <button
+                      key={category}
+                      onClick={() => pickRandomPhrase(category)}
+                      disabled={isAnimating}
+                      className="relative p-6 bg-gradient-to-br from-yellow-400 to-amber-700
+                               hover:from-yellow-300 hover:to-amber-600
+                               rounded-lg transition-all group overflow-hidden"
+                    >
+                      {/* Animated border effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-yellow-200 to-amber-400 opacity-0 
+                                    group-hover:opacity-20 transition-opacity" />
+                      
+                      {/* Lightning effects on hover */}
+                      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div className="absolute top-0 left-1/4 w-px h-full bg-yellow-200 
+                                      transform -skew-x-12 animate-pulse" />
+                        <div className="absolute top-0 right-1/4 w-px h-full bg-yellow-200 
+                                      transform skew-x-12 animate-pulse" />
+                      </div>
+                      
+                      <div className="relative flex flex-col items-center gap-3">
+                        <IconComponent className="w-8 h-8 text-yellow-100
+                                               group-hover:scale-110 transition-transform
+                                               animate-pulse" />
+                        <span className="text-lg font-medium text-white text-center 
+                                       drop-shadow-[0_0_4px_rgba(234,179,8,0.5)]">
+                          {category}
+                        </span>
+                      </div>
+                    </button>
+                  );
+                }
+                
+                // Default styling for other categories
+                return (
+                  <button
+                    key={category}
+                    onClick={() => pickRandomPhrase(category)}
+                    disabled={isAnimating}
+                    className="p-6 bg-gradient-to-br from-red-600 to-red-900 
+                             hover:from-red-500 hover:to-red-800 
+                             rounded-lg transition-all group"
+                  >
+                    <div className="flex flex-col items-center gap-3">
+                      <IconComponent className="w-8 h-8 text-red-200 
+                                             group-hover:scale-110 transition-transform" />
+                      <span className="text-lg font-medium text-white text-center">{category}</span>
+                    </div>
+                  </button>
+                );
             }
             return null;
           })}
