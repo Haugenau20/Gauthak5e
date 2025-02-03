@@ -7,15 +7,9 @@ import Spells from './components/Spells';
 import Adventure from './components/Adventure';
 import Social from './components/Social';
 import RitualAndMagic from './components/RitualAndMagic';
+import HeritageAndIdentity from './components/HeritageAndIdentity';
 
 // Placeholder components for other pages
-const HeritageAndIdentity = ({ onBack }) => (
-  <div className="min-h-screen bg-slate-900 p-8">
-    <button onClick={onBack} className="text-white">Back</button>
-    <h1 className="text-white text-2xl">Heritage & Identity Page (Coming Soon)</h1>
-  </div>
-);
-
 const ChallengeAndTriumph = ({ onBack }) => (
   <div className="min-h-screen bg-slate-900 p-8">
     <button onClick={onBack} className="text-white">Back</button>
