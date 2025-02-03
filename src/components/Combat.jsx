@@ -5,11 +5,9 @@ import {
   GiCrossedSwords,
   GiCrossedSlashes,
   GiImpactPoint,
-  GiLightningDome,
   GiSpellBook,
   GiSwordman,
   GiTrophyCup,
-  GiMuscleUp
 } from "react-icons/gi";
 import LightningOverlay from './LightningOverlay';
 
