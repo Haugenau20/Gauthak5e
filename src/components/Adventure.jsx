@@ -3,7 +3,6 @@ import { ArrowLeft } from 'lucide-react';
 import { 
   GiMountainRoad,
   GiCompass,
-  GiDoorway,
   GiMountainClimbing,
   GiLightningStorm,
   GiPathDistance,
@@ -13,7 +12,12 @@ import {
   GiSunCloud,
   GiRaining,
   GiEclipse,
-  GiSnowing
+  GiSnowing,
+  GiHolyHandGrenade,
+  GiUndergroundCave,
+  GiVillage,
+  GiAncientRuins,
+  GiCaveEntrance
 } from "react-icons/gi";
 import LightningOverlay from './LightningOverlay';
 
@@ -38,12 +42,40 @@ const Adventure = ({ onBack }) => {
       "Placeholder4",
       "Placeholder5"
     ],
-    'Entering New Locations': [
+    'Sacred Sites': [
       "Selv mørket frygter tordenen!",
       "Lad lynet oplyse vores vej!",
       "Thor's lys vil guide os!",
+      "Placeholder34",
+      "Placeholder35"
+    ],
+    'Dark Places': [
       "Mørket kan ikke gemme sig for storm!",
-      "Selv huler ryster når torden kommer!"
+      "Selv huler ryster når torden kommer!",
+      "Placeholder36",
+      "Placeholder37",
+      "Placeholder38"
+    ],
+    'Settlements': [
+      "Placeholder39",
+      "Placeholder40",
+      "Placeholder41",
+      "Placeholder42",
+      "Placeholder43"
+    ],
+    'Ancient Ruins': [
+      "Placeholder44",
+      "Placeholder45",
+      "Placeholder46",
+      "Placeholder47",
+      "Placeholder48"
+    ],
+    'Natural Caverns': [
+      "Placeholder49",
+      "Placeholder50",
+      "Placeholder51",
+      "Placeholder52",
+      "Placeholder53"
     ],
     'Discovering Treasures': [
       "Placeholder6",
@@ -65,7 +97,7 @@ const Adventure = ({ onBack }) => {
         "Placeholder17",
         "Placeholder18"
       ],
-      'Clear Skies': [
+      'Sunny Day': [
         "Placeholder19",
         "Placeholder20",
         "Placeholder21"
@@ -96,7 +128,11 @@ const Adventure = ({ onBack }) => {
   const categoryIcons = {
     'Traveling': GiPathDistance,
     'Exploration': GiCompass,
-    'Entering New Locations': GiDoorway,
+    'Sacred Sites': GiHolyHandGrenade,
+    'Dark Places': GiUndergroundCave,
+    'Settlements': GiVillage,
+    'Ancient Ruins': GiAncientRuins,
+    'Natural Caverns': GiCaveEntrance,
     'Discovering Treasures': GiChest,
     'Overcoming Obstacles': GiMountainClimbing,
     'Natural Phenomena': GiLightningStorm
@@ -104,7 +140,7 @@ const Adventure = ({ onBack }) => {
 
   const weatherIcons = {
     'Thunderstorm': GiThunderStruck,
-    'Clear Skies': GiSun,
+    'Sunny Day': GiSun,
     'Rain': GiRaining,
     'Snow': GiSnowing,
     'Eclipse': GiEclipse,
