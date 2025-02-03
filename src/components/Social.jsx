@@ -113,12 +113,12 @@ const SocialInteractions = ({ onBack }) => {
         <div className="flex items-center gap-4 mb-6">
           <button 
             onClick={onBack}
-            className="text-white hover:text-emerald-400 transition-colors"
+            className="text-white hover:text-blue-400 transition-colors"
           >
             <ArrowLeft size={24} />
           </button>
           <h1 className="text-2xl font-bold text-white flex items-center gap-2">
-            <GiTabletopPlayers className="text-emerald-400 w-6 h-6" />
+            <GiTabletopPlayers className="text-blue-400 w-6 h-6" />
             Social Interactions
           </h1>
         </div>
@@ -132,12 +132,12 @@ const SocialInteractions = ({ onBack }) => {
                 key={category}
                 onClick={() => pickRandomPhraseFromCategory(category)}
                 disabled={isAnimating}
-                className="p-6 bg-gradient-to-br from-emerald-600 to-teal-900 
-                         hover:from-emerald-500 hover:to-teal-800 
+                className="p-6 bg-gradient-to-br from-blue-500 to-blue-800 
+                         hover:from-blue-400 hover:to-blue-700 
                          rounded-lg transition-all group"
               >
                 <div className="flex flex-col items-center gap-3">
-                  <IconComponent className="w-8 h-8 text-emerald-200 
+                  <IconComponent className="w-8 h-8 text-blue-100 
                                          group-hover:scale-110 transition-transform" />
                   <span className="text-lg font-medium text-white">{category}</span>
                 </div>
@@ -148,9 +148,9 @@ const SocialInteractions = ({ onBack }) => {
 
         {/* Selected Phrase Display */}
         {selectedPhrase && (
-          <div className={`mt-8 p-6 bg-gradient-to-r from-emerald-900/50 to-teal-900/50 
+          <div className={`mt-8 p-6 bg-gradient-to-r from-blue-900/50 to-blue-800/50 
                           rounded-lg text-center ${isAnimating ? 'animate-pulse' : ''}`}>
-            <h3 className="text-lg text-emerald-400 mb-2">{selectedCategory}:</h3>
+            <h3 className="text-lg text-blue-400 mb-2">{selectedCategory}:</h3>
             <p className="text-2xl font-bold text-white">{selectedPhrase}</p>
           </div>
         )}
@@ -158,7 +158,7 @@ const SocialInteractions = ({ onBack }) => {
         {/* Full List of Phrases for Selected Category */}
         {expandedCategory && (
           <div className="mt-8 p-6 bg-slate-800 rounded-lg">
-            <h3 className="text-xl font-bold text-emerald-400 mb-4 flex items-center gap-2">
+            <h3 className="text-xl font-bold text-blue-400 mb-4 flex items-center gap-2">
               {categoryIcons[expandedCategory] && React.createElement(categoryIcons[expandedCategory], { className: "w-6 h-6" })}
               {expandedCategory} - All Phrases:
             </h3>
@@ -167,7 +167,7 @@ const SocialInteractions = ({ onBack }) => {
                 <div 
                   key={index}
                   className={`p-3 rounded ${phrase === selectedPhrase 
-                    ? 'bg-emerald-900/50 text-emerald-200' 
+                    ? 'bg-blue-900/50 text-blue-200' 
                     : 'bg-slate-700 text-white'}`}
                 >
                   {phrase}
