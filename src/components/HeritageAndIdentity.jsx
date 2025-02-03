@@ -10,7 +10,7 @@ import {
   GiChest,
   GiShieldcomb,
   GiThunderSkull,
-  GiAncestralMask,
+  GiThorHammer,
   GiBroadsword,
   GiPerson
 } from "react-icons/gi";
@@ -99,7 +99,7 @@ const HeritageAndIdentity = ({ onBack }) => {
     'First Contact': GiThunderSkull,
     'Growing Connection': GiMountainRoad,
     'Escape Story': GiChest,
-    'New Identity': GiAncestralMask
+    'New Identity': GiThorHammer
   };
 
   const [selectedCategory, setSelectedCategory] = useState('');
