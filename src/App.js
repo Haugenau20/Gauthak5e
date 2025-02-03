@@ -8,15 +8,9 @@ import Adventure from './components/Adventure';
 import Social from './components/Social';
 import RitualAndMagic from './components/RitualAndMagic';
 import HeritageAndIdentity from './components/HeritageAndIdentity';
+import ChallengeAndTriumph from './components/ChallengeAndTriumph';
 
 // Placeholder components for other pages
-const ChallengeAndTriumph = ({ onBack }) => (
-  <div className="min-h-screen bg-slate-900 p-8">
-    <button onClick={onBack} className="text-white">Back</button>
-    <h1 className="text-white text-2xl">Challenge & Triumph Page (Coming Soon)</h1>
-  </div>
-);
-
 const RestAndReflection = ({ onBack }) => (
   <div className="min-h-screen bg-slate-900 p-8">
     <button onClick={onBack} className="text-white">Back</button>
