@@ -7,7 +7,6 @@ import {
   GiLightningStorm,
   GiPathDistance,
   GiChest,
-  GiThunderStruck,
   GiSun,
   GiSunCloud,
   GiRaining,
@@ -17,7 +16,8 @@ import {
   GiUndergroundCave,
   GiVillage,
   GiAncientRuins,
-  GiCaveEntrance
+  GiCaveEntrance,
+  GiThunderStruck
 } from "react-icons/gi";
 import LightningOverlay from './LightningOverlay';
 
@@ -42,41 +42,43 @@ const Adventure = ({ onBack }) => {
       "Placeholder4",
       "Placeholder5"
     ],
-    'Sacred Sites': [
-      "Selv mørket frygter tordenen!",
-      "Lad lynet oplyse vores vej!",
-      "Thor's lys vil guide os!",
-      "Placeholder34",
-      "Placeholder35"
-    ],
-    'Dark Places': [
-      "Mørket kan ikke gemme sig for storm!",
-      "Selv huler ryster når torden kommer!",
-      "Placeholder36",
-      "Placeholder37",
-      "Placeholder38"
-    ],
-    'Settlements': [
-      "Placeholder39",
-      "Placeholder40",
-      "Placeholder41",
-      "Placeholder42",
-      "Placeholder43"
-    ],
-    'Ancient Ruins': [
-      "Placeholder44",
-      "Placeholder45",
-      "Placeholder46",
-      "Placeholder47",
-      "Placeholder48"
-    ],
-    'Natural Caverns': [
-      "Placeholder49",
-      "Placeholder50",
-      "Placeholder51",
-      "Placeholder52",
-      "Placeholder53"
-    ],
+    'Entering New Locations': {
+      'Sacred Sites': [
+        "Selv mørket frygter tordenen!",
+        "Lad lynet oplyse vores vej!",
+        "Thor's lys vil guide os!",
+        "Placeholder34",
+        "Placeholder35"
+      ],
+      'Dark Places': [
+        "Mørket kan ikke gemme sig for storm!",
+        "Selv huler ryster når torden kommer!",
+        "Placeholder36",
+        "Placeholder37",
+        "Placeholder38"
+      ],
+      'Settlements': [
+        "Placeholder39",
+        "Placeholder40",
+        "Placeholder41",
+        "Placeholder42",
+        "Placeholder43"
+      ],
+      'Ancient Ruins': [
+        "Placeholder44",
+        "Placeholder45",
+        "Placeholder46",
+        "Placeholder47",
+        "Placeholder48"
+      ],
+      'Natural Caverns': [
+        "Placeholder49",
+        "Placeholder50",
+        "Placeholder51",
+        "Placeholder52",
+        "Placeholder53"
+      ]
+    },
     'Discovering Treasures': [
       "Placeholder6",
       "Placeholder7",
@@ -125,14 +127,18 @@ const Adventure = ({ onBack }) => {
     }
   };
 
-  const categoryIcons = {
-    'Traveling': GiPathDistance,
-    'Exploration': GiCompass,
+  const locationIcons = {
     'Sacred Sites': GiHolyHandGrenade,
     'Dark Places': GiUndergroundCave,
     'Settlements': GiVillage,
     'Ancient Ruins': GiAncientRuins,
-    'Natural Caverns': GiCaveEntrance,
+    'Natural Caverns': GiCaveEntrance
+  };
+
+  const categoryIcons = {
+    'Traveling': GiPathDistance,
+    'Exploration': GiCompass,
+    'Entering New Locations': GiHolyHandGrenade,
     'Discovering Treasures': GiChest,
     'Overcoming Obstacles': GiMountainClimbing,
     'Natural Phenomena': GiLightningStorm
@@ -201,7 +207,7 @@ const Adventure = ({ onBack }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
           {Object.entries(adventurePhrases).map(([category, content]) => {
             const IconComponent = categoryIcons[category];
-            if (category !== 'Natural Phenomena') {
+            if (category !== 'Natural Phenomena' && category !== 'Entering New Locations') {
               return (
                 <button
                   key={category}
@@ -221,6 +227,33 @@ const Adventure = ({ onBack }) => {
             }
             return null;
           })}
+        </div>
+
+        {/* Locations Section */}
+        <div className="bg-slate-800 rounded-lg p-6 mb-8">
+          <h2 className="text-xl font-bold text-green-400 mb-4 flex items-center gap-2">
+            <GiHolyHandGrenade className="w-6 h-6" />
+            Entering New Locations
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {Object.entries(adventurePhrases['Entering New Locations']).map(([location, _]) => {
+              const LocationIcon = locationIcons[location];
+              return (
+                <button
+                  key={location}
+                  onClick={() => pickRandomPhrase('Entering New Locations', location)}
+                  disabled={isAnimating}
+                  className="p-4 bg-gradient-to-br from-green-700 to-emerald-900 
+                           hover:from-green-600 hover:to-emerald-800 
+                           rounded-lg transition-all text-white font-medium
+                           flex items-center gap-2 justify-center"
+                >
+                  <LocationIcon className="w-5 h-5" />
+                  {location}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* Natural Phenomena Section */}
