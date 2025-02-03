@@ -8,8 +8,9 @@ import {
   GiLightningStorm,
   GiPathDistance,
   GiChest,
+  GiThunderStruck,
+  GiSun,
   GiSunCloud,
-  GiTornado,
   GiRaining,
   GiEclipse,
   GiSnowing
@@ -102,12 +103,12 @@ const Adventure = ({ onBack }) => {
   };
 
   const weatherIcons = {
-    'Thunderstorm': GiLightningStorm,
-    'Clear Skies': GiSunCloud,
+    'Thunderstorm': GiThunderStruck,
+    'Clear Skies': GiSun,
     'Rain': GiRaining,
     'Snow': GiSnowing,
     'Eclipse': GiEclipse,
-    'Cloudy Day': GiTornado
+    'Cloudy Day': GiSunCloud
   };
 
   const [selectedCategory, setSelectedCategory] = useState('');
