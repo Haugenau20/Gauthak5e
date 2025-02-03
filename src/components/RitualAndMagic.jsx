@@ -59,20 +59,80 @@ const RitualAndMagic = ({ onBack, onViewSpells }) => {
         "Himlen frigør dig fra mørket!"
       ]
     },
-    'Religious Ceremonies': {
-      'Prayer to Thor': [
-        "Thor, hør din tjeners bøn.",
-        "Ved hammer og lyn, jeg påkalder dig.",
-        "Placeholder3",
-        "Placeholder4",
-        "Placeholder5"
+    'Divine Protection': {
+      'Shield of Faith': [
+        "Thor's skjold, beskyt min allierede!",
+        "Omgiv dig med himlens beskyttelse!",
+        "Ved tordenguden, vær beskyttet!",
+        "Stormens værn omkring dig!",
+        "Thor's magt er dit skjold!"
       ],
-      'Blessing of the Storm': [
-        "Lad himlen velsigne denne stund.",
-        "Thor's kraft gennemstrømmer os.",
-        "Placeholder3",
-        "Placeholder4",
-        "Placeholder5"
+      'Death Ward': [
+        "Thor nægter at give slip på dig!",
+        "Døden har ingen magt over Thor's udvalgte!",
+        "Himlens lys holder dig blandt de levende!",
+        "Ved tordengudens vilje, bliv blandt os!",
+        "Stormen holder døden på afstand!"
+      ],
+      'Bless': [
+        "Thor's styrke være med jer!",
+        "Himlens gunst over jer alle!",
+        "Må tordenen styrke jeres arm!",
+        "Ved Thor's hammer, vær velsignet!",
+        "Stormens kraft flyder gennem jer!"
+      ]
+    },
+    'Storm Control': {
+      'Control Water': [
+        "Dans, bølger, efter min vilje!",
+        "Thor's kraft styrer vandene!",
+        "Himlens regn adlyder mig!",
+        "Ved stormens magt, bøj dig vand!",
+        "Som torden dirigerer jeg vandene!"
+      ],
+      'Fog Cloud': [
+        "Tågen kommer på stormens kald!",
+        "Thor's ånde tilslører alt!",
+        "Skyggerne af himlen selv!",
+        "Skjul os i stormens pust!",
+        "Lad tågen være vort skjold!"
+      ],
+      'Water Walk': [
+        "Thor gør vejen fast under dine fødder!",
+        "Vandene bærer dig som fast grund!",
+        "Ved himlens kraft, gå på bølgerne!",
+        "Stormens børn frygter ikke dybet!",
+        "Som lynet over vandene skal du gå!"
+      ],
+      'Silence': [
+        "Selv tordenen må hvile!",
+        "Ved Thor's vilje, vær stille!",
+        "Lad stormen falde til ro!",
+        "Stilhed før tordenskredet!",
+        "Fred i stormens øje!"
+      ]
+    },
+    'Divine Insight': {
+      'Clairvoyance': [
+        "Thor's øje ser i det fjerne!",
+        "Ved himlens blik, vis mig!",
+        "Stormens øje ser alt!",
+        "Tordenkigger jeg gennem skyerne!",
+        "Lad lynet oplyse det skjulte!"
+      ],
+      'Speak with Dead': [
+        "Ved Thor's hammer, tal!",
+        "Fra Valhalla's haller, svar mig!",
+        "Jeg kalder dig fra skyggerne!",
+        "Tordenen vækker de døde!",
+        "Fortæl mig, du som hviler!"
+      ],
+      'Divination': [
+        "Thor, vis mig din visdom!",
+        "Stormens varsler taler til mig!",
+        "Ved lynet, oplys min vej!",
+        "Himlens tegn åbenbares!",
+        "Tordenen fortæller sandheden!"
       ]
     },
     'Divine Channeling': {
@@ -112,9 +172,10 @@ const RitualAndMagic = ({ onBack, onViewSpells }) => {
   const categoryIcons = {
     'Healing Spells': GiHealing,
     'Restorative Magic': GiMagicSwirl,
-    'Religious Ceremonies': GiPrayer,
-    'Divine Channeling': GiHolyGrail,
-    'Holy Blessings': GiAngelWings
+    'Divine Protection': GiAngelWings,
+    'Storm Control': GiMagicSwirl,
+    'Divine Insight': GiHolyGrail,
+    'Holy Blessings': GiPrayer
   };
 
   const [selectedCategory, setSelectedCategory] = useState('');
