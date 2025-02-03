@@ -8,7 +8,6 @@ import {
   GiHolyGrail,
   GiAngelWings,
   GiMeditation,
-  GiPowerRing
 } from "react-icons/gi";
 import LightningOverlay from './LightningOverlay';
 
