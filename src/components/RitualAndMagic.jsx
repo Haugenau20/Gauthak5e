@@ -175,6 +175,7 @@ const RitualAndMagic = ({ onBack, onViewSpells }) => {
     'Divine Protection': GiAngelWings,
     'Storm Control': GiMagicSwirl,
     'Divine Insight': GiHolyGrail,
+    'Divine Channeling': GiAngelWings,
     'Holy Blessings': GiPrayer
   };
 
