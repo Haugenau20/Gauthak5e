@@ -190,11 +190,18 @@ const Combat = ({ onBack, onViewSpells }) => {
                       disabled={isAnimating}
                       className="relative p-6 bg-gradient-to-br from-yellow-400 to-amber-700
                                hover:from-yellow-300 hover:to-amber-600
-                               rounded-lg transition-all group overflow-hidden"
+                               rounded-lg transition-all group overflow-hidden
+                               hover:shadow-[0_0_15px_3px_rgba(234,179,8,0.6)]
+                               border border-yellow-400/30
+                               hover:border-yellow-300"
                     >
                       {/* Animated border effect */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-yellow-200 to-amber-400 opacity-0 
-                                    group-hover:opacity-20 transition-opacity" />
+                      <div className="absolute inset-0">
+                        <div className="absolute inset-0 bg-gradient-to-r from-yellow-200 to-amber-400 opacity-0 
+                                      group-hover:opacity-20 transition-opacity duration-300" />
+                        <div className="absolute inset-0 bg-gradient-to-tr from-yellow-300/40 to-transparent opacity-0 
+                                      group-hover:opacity-100 transition-opacity duration-300 animate-pulse" />
+                      </div>
                       
                       {/* Lightning effects on hover */}
                       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
