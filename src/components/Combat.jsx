@@ -8,6 +8,7 @@ import {
   GiSpellBook,
   GiSwordman,
   GiTrophyCup,
+  GiLightningTree
 } from "react-icons/gi";
 import LightningOverlay from './LightningOverlay';
 
@@ -58,6 +59,15 @@ const Combat = ({ onBack, onViewSpells }) => {
       "Placeholder13",
       "Placeholder14",
       "Placeholder15"
+    ],
+    'Javelin of Lightning': [
+      "Zeus Juice",
+      "Pew Pew",
+      "Blitzgrød",
+      "Kildepind",
+      "Freedom Thunder",
+      "Tordenfar",
+      "Thors Finger"
     ],
     'Combat Oriented Spells': {
       'Channel Divinity': [
@@ -111,6 +121,7 @@ const Combat = ({ onBack, onViewSpells }) => {
     'Critical Hits/Special Moves': GiCrossedSlashes,
     'Dealing Damage': GiImpactPoint,
     'Battle Victory': GiTrophyCup,
+    'Javelin of Lightning': GiLightningTree,
     'Combat Oriented Spells': GiSpellBook
   };
 
@@ -118,6 +129,7 @@ const Combat = ({ onBack, onViewSpells }) => {
   const [selectedSpell, setSelectedSpell] = useState('');
   const [selectedPhrase, setSelectedPhrase] = useState('');
   const [isAnimating, setIsAnimating] = useState(false);
+
 
   const pickRandomPhrase = (category, spell = null) => {
     let phrases;
