@@ -3,6 +3,7 @@ import { ArrowLeft } from 'lucide-react';
 import { 
   GiMountainCave,
   GiChainedHeart,
+  GiPrisoner,
   GiArena,
   GiLightningStorm,
   GiAncientSword,
@@ -86,7 +87,7 @@ const HeritageAndIdentity = ({ onBack }) => {
 
   const categoryIcons = {
     'Mountain Tribe Background': GiMountainCave,
-    'Path to Enslavement': GiChainedHeart,
+    'Path to Enslavement': GiPrisoner,
     'Finding Thunder Faith': GiLightningStorm,
     'Breaking Free': GiBroadsword
   };
