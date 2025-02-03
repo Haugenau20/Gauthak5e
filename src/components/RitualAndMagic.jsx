@@ -7,9 +7,9 @@ import {
   GiHealing,
   GiHolyGrail,
   GiAngelWings,
-  GiMeditation,
+  GiMeditation
 } from "react-icons/gi";
-import LightningOverlay from './LightningOverlay';
+import LightningOverlay from './LightningOverlay.jsx';
 
 const RitualAndMagic = ({ onBack, onViewSpells }) => {
   const ritualPhrases = {
@@ -105,22 +105,6 @@ const RitualAndMagic = ({ onBack, onViewSpells }) => {
         "Himlen lyser din sti.",
         "Thor's indsigt være med dig.",
         "Følg tordenens kald."
-      ]
-    },
-    'Blessing Others': {
-      'Bless': [
-        "Thor's styrke være med dig.",
-        "Må stormens kraft beskytte dig.",
-        "Himlen våger over din vej.",
-        "Placeholder4",
-        "Placeholder5"
-      ],
-      'Protection': [
-        "Thor's skjold omgiver dig.",
-        "Stå fast som bjerget i stormen.",
-        "Placeholder3",
-        "Placeholder4",
-        "Placeholder5"
       ]
     }
   };

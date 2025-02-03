@@ -68,7 +68,7 @@ function App() {
       case 'social':
         return <Social onBack={handleBack} />;
       case 'ritual':
-        return <RitualAndMagic onBack={handleBack} />;
+        return <RitualAndMagic onBack={handleBack} onViewSpells={() => handleNavigation('spells')}/>;
       case 'heritage':
         return <HeritageAndIdentity onBack={handleBack} />;
       case 'challenge':
