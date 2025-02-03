@@ -135,22 +135,6 @@ const RitualAndMagic = ({ onBack, onViewSpells }) => {
         "Tordenen fortæller sandheden!"
       ]
     },
-    'Divine Channeling': {
-      'Channel Divinity': [
-        "Ved Thors mægtige hammer, jeg påkalder din kraft!",
-        "Lad tordenen være mit vidne!",
-        "Guddommelig storm, hør mit kald!",
-        "Jeg kanaliserer lysets og stormens kraft",
-        "Thor, lad din vilje strømme gennem mig!"
-      ],
-      'Divine Connection': [
-        "Jeg åbner mit sind for himlens kraft.",
-        "Thor, lad din visdom flyde gennem mig.",
-        "Placeholder3",
-        "Placeholder4",
-        "Placeholder5"
-      ]
-    },
     'Holy Blessings': {
       'Protection Blessing': [
         "Thor's skjold omgiver dig nu.",
@@ -175,7 +159,6 @@ const RitualAndMagic = ({ onBack, onViewSpells }) => {
     'Divine Protection': GiAngelWings,
     'Storm Control': GiMagicSwirl,
     'Divine Insight': GiHolyGrail,
-    'Divine Channeling': GiAngelWings,
     'Holy Blessings': GiPrayer
   };
 
