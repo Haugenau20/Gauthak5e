@@ -16,9 +16,9 @@ const LandingPage = ({ onNavigate }) => {
       title: 'Combat',
       description: 'Master the art of battle with powerful phrases',
       icon: GiCrossedSwords,
-      gradientFrom: 'from-red-600',
+      gradientFrom: 'from-red-500',
       gradientTo: 'to-red-800',
-      hoverFrom: 'hover:from-red-500',
+      hoverFrom: 'hover:from-red-400',
       hoverTo: 'hover:to-red-700'
     },
     {
@@ -26,9 +26,9 @@ const LandingPage = ({ onNavigate }) => {
       title: 'Adventure',
       description: 'Words for the journey ahead',
       icon: GiMountainRoad,
-      gradientFrom: 'from-green-600',
+      gradientFrom: 'from-green-500',
       gradientTo: 'to-green-800',
-      hoverFrom: 'hover:from-green-500',
+      hoverFrom: 'hover:from-green-400',
       hoverTo: 'hover:to-green-700'
     },
     {
@@ -36,9 +36,9 @@ const LandingPage = ({ onNavigate }) => {
       title: 'Social',
       description: 'Navigate social interactions with grace',
       icon: GiTabletopPlayers,
-      gradientFrom: 'from-blue-600',
+      gradientFrom: 'from-blue-500',
       gradientTo: 'to-blue-800',
-      hoverFrom: 'hover:from-blue-500',
+      hoverFrom: 'hover:from-blue-400',
       hoverTo: 'hover:to-blue-700'
     },
     {
@@ -46,9 +46,9 @@ const LandingPage = ({ onNavigate }) => {
       title: 'Ritual & Magic',
       description: 'Channel the power of the arcane',
       icon: GiSpellBook,
-      gradientFrom: 'from-purple-600',
+      gradientFrom: 'from-purple-500',
       gradientTo: 'to-purple-800',
-      hoverFrom: 'hover:from-purple-500',
+      hoverFrom: 'hover:from-purple-400',
       hoverTo: 'hover:to-purple-700'
     },
     {
@@ -56,9 +56,9 @@ const LandingPage = ({ onNavigate }) => {
       title: 'Heritage & Identity',
       description: 'Express your cultural background',
       icon: GiChainedHeart,
-      gradientFrom: 'from-amber-600',
+      gradientFrom: 'from-amber-500',
       gradientTo: 'to-amber-800',
-      hoverFrom: 'hover:from-amber-500',
+      hoverFrom: 'hover:from-amber-400',
       hoverTo: 'hover:to-amber-700'
     },
     {
@@ -66,9 +66,9 @@ const LandingPage = ({ onNavigate }) => {
       title: 'Challenge & Triumph',
       description: 'Words for moments of victory and defeat',
       icon: GiLaurelCrown,
-      gradientFrom: 'from-emerald-600',
+      gradientFrom: 'from-emerald-500',
       gradientTo: 'to-emerald-800',
-      hoverFrom: 'hover:from-emerald-500',
+      hoverFrom: 'hover:from-emerald-400',
       hoverTo: 'hover:to-emerald-700'
     },
     {
@@ -76,9 +76,9 @@ const LandingPage = ({ onNavigate }) => {
       title: 'Rest & Reflection',
       description: 'Find peace in quiet moments',
       icon: GiMeditation,
-      gradientFrom: 'from-cyan-600',
+      gradientFrom: 'from-cyan-500',
       gradientTo: 'to-cyan-800',
-      hoverFrom: 'hover:from-cyan-500',
+      hoverFrom: 'hover:from-cyan-400',
       hoverTo: 'hover:to-cyan-700'
     },
     {
@@ -86,9 +86,9 @@ const LandingPage = ({ onNavigate }) => {
       title: 'Spells',
       description: 'Master your magical repertoire',
       icon: GiSpellBook,
-      gradientFrom: 'from-indigo-600',
+      gradientFrom: 'from-indigo-500',
       gradientTo: 'to-indigo-900',
-      hoverFrom: 'hover:from-indigo-500',
+      hoverFrom: 'hover:from-indigo-400',
       hoverTo: 'hover:to-indigo-800'
     }
   ];
