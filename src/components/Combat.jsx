@@ -11,7 +11,7 @@ import {
 } from "react-icons/gi";
 import LightningOverlay from './LightningOverlay';
 
-const Combat = ({ onBack }) => {
+const Combat = ({ onBack, onViewSpells }) => {
   // Reuse existing phrases from EnteringBattle.txt
   const combatPhrases = {
     'Entering Battle': [
@@ -60,6 +60,20 @@ const Combat = ({ onBack }) => {
       "Placeholder15"
     ],
     'Combat Oriented Spells': {
+      'Channel Divinity': [
+        "Ved Thors mægtige hammer, jeg påkalder din kraft!",
+        "Lad tordenen være mit vidne!",
+        "Guddommelig storm, hør mit kald!",
+        "Jeg kanaliserer lysets og stormens kraft",
+        "Thor, lad din vilje strømme gennem mig!"
+      ],
+      'Wrath of the Storm': [
+        "Mærk himlens vrede!",
+        "Tordenen er min at befale!",
+        "Lad stormen straffe dig!",
+        "Ved Thors lynild, brænd!",
+        "Himlen selv fordømmer dig!"
+      ],
       'Thunderwave': [
         "Blæs som en storm i natten!",
         "Flyv væk med vinden!",
@@ -80,6 +94,13 @@ const Combat = ({ onBack }) => {
         "Stormens pile, find dit mål!",
         "Himlens vrede er min at kalde!",
         "Ved min hånd, lyner falder!"
+      ],
+      'Spirit Guardians': [
+        "Thors krigere, beskyt os!",
+        "Dans omkring mig, stormens ånder!",
+        "Kæmp ved min side, himlens vogtere!",
+        "Ved tordenen, omring mig!",
+        "Lysets og stormens væsner, frem!"
       ]
     }
   };
@@ -188,6 +209,18 @@ const Combat = ({ onBack }) => {
                 {spell}
               </button>
             ))}
+          </div>
+          <div className="mt-6 text-center">
+            <button
+              onClick={onViewSpells}
+              className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 
+                       hover:from-purple-500 hover:to-blue-500 
+                       rounded-lg text-white font-medium transition-all
+                       flex items-center gap-2 mx-auto"
+            >
+              <GiSpellBook className="w-5 h-5" />
+              View All Spells
+            </button>
           </div>
         </div>
 

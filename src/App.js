@@ -67,8 +67,8 @@ function App() {
     };
   }, []);
 
-  const handleNavigation = (page) => {
-    window.history.pushState({ page }, '', `/${page}`);
+  const handleNavigation = (page, fromPage = null) => {
+    window.history.pushState({ page, fromPage }, '', `/${page}`);
     setCurrentPage(page);
   };
 
@@ -79,7 +79,7 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case 'combat':
-        return <Combat onBack={handleBack} />;
+        return <Combat onBack={handleBack} onViewSpells={() => handleNavigation('spells', 'combat')} />;
       case 'adventure':
         return <Adventure onBack={handleBack} />;
       case 'social':
