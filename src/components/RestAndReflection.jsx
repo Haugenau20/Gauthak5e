@@ -4,11 +4,24 @@ import {
   GiMeditation,
   GiCampfire,
   GiCampingTent,
-  GiNightSleep,
+  GiSleepingBag,
   GiSandsOfTime,
   GiBookmarklet,
   GiTalk,
-  GiTeamIdea
+  GiTeamIdea,
+  GiSunrise,
+  GiCompass,
+  GiTabletopPlayers,
+  GiSparkSpirit,
+  GiBreakingChain,
+  GiPathDistance,
+  GiScrollUnfurled,
+  GiBookCover,
+  GiLevelThree,
+  GiShakingHands,
+  GiTargetPrize,
+  GiTriorb,
+  GiNightSleep
 } from "react-icons/gi";
 import LightningOverlay from './LightningOverlay';
 
@@ -140,12 +153,30 @@ const RestAndReflection = ({ onBack }) => {
   };
 
   const subcategoryIcons = {
+    // Camp Dialogue
     'Evening Conversations': GiTalk,
-    'Sharing Stories': GiBookmarklet,
-    'Planning Ahead': GiTeamIdea,
-    'Before Sleep': GiNightSleep,
-    'Morning Reflections': GiMeditation,
-    'Dream Sharing': GiCampingTent
+    'Sharing Stories': GiTabletopPlayers,
+    'Planning Ahead': GiCompass,
+    
+    // Long Rest Moments
+    'Before Sleep': GiSleepingBag,
+    'Morning Reflections': GiSunrise,
+    'Dream Sharing': GiCampingTent,
+    
+    // Character Development
+    'Personal Growth': GiSparkSpirit,
+    'Overcoming Past': GiBreakingChain,
+    'Future Aspirations': GiPathDistance,
+    
+    // Story Sharing
+    'Personal Tales': GiScrollUnfurled,
+    'Adventure Recap': GiBookCover,
+    'Lessons Learned': GiLevelThree,
+    
+    // Group Bonding
+    'Team Trust': GiShakingHands,
+    'Shared Goals': GiTargetPrize,
+    'Unity Moments': GiTriorb
   };
 
   const [selectedCategory, setSelectedCategory] = useState('');
