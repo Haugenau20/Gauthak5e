@@ -152,7 +152,7 @@ const RestAndReflection = ({ onBack }) => {
   const [selectedSubcategory, setSelectedSubcategory] = useState('');
   const [selectedPhrase, setSelectedPhrase] = useState('');
   const [isAnimating, setIsAnimating] = useState(false);
-  const [expandedCategory, setExpandedCategory] = useState(null);
+  const [expandedSubcategory, setExpandedSubcategory] = useState(null);
 
   const pickRandomPhrase = (category, subcategory) => {
     const phrases = reflectionPhrases[category][subcategory];
@@ -161,7 +161,7 @@ const RestAndReflection = ({ onBack }) => {
     setIsAnimating(true);
     setSelectedCategory(category);
     setSelectedSubcategory(subcategory);
-    setExpandedCategory(category);
+    setExpandedSubcategory(subcategory);
     
     let flashCount = 0;
     const flashInterval = setInterval(() => {
@@ -244,35 +244,26 @@ const RestAndReflection = ({ onBack }) => {
           </div>
         )}
 
-        {/* Full List of Phrases for Selected Category */}
-        {expandedCategory && (
+        {/* Phrases List for Selected Subcategory */}
+        {expandedSubcategory && (
           <div className="mt-8 p-6 bg-slate-800 rounded-lg">
             <h3 className="text-xl font-bold text-cyan-400 mb-4 flex items-center gap-2">
-              {categoryIcons[expandedCategory] && 
-                React.createElement(categoryIcons[expandedCategory], { className: "w-6 h-6" })}
-              {expandedCategory} - All Phrases:
+              {subcategoryIcons[expandedSubcategory] && 
+                React.createElement(subcategoryIcons[expandedSubcategory], { className: "w-6 h-6" })}
+              {expandedSubcategory}:
             </h3>
-            {Object.entries(reflectionPhrases[expandedCategory]).map(([subcategory, phrases]) => (
-              <div key={subcategory} className="mb-6 last:mb-0">
-                <h4 className="text-lg font-semibold text-cyan-300 mb-3 flex items-center gap-2">
-                  {subcategoryIcons[subcategory] && 
-                    React.createElement(subcategoryIcons[subcategory], { className: "w-5 h-5" })}
-                  {subcategory}
-                </h4>
-                <div className="space-y-3">
-                  {phrases.map((phrase, index) => (
-                    <div 
-                      key={index}
-                      className={`p-3 rounded ${phrase === selectedPhrase 
-                        ? 'bg-cyan-900/50 text-cyan-200' 
-                        : 'bg-slate-700 text-white'}`}
-                    >
-                      {phrase}
-                    </div>
-                  ))}
+            <div className="space-y-3">
+              {reflectionPhrases[selectedCategory][expandedSubcategory].map((phrase, index) => (
+                <div 
+                  key={index}
+                  className={`p-3 rounded ${phrase === selectedPhrase 
+                    ? 'bg-cyan-900/50 text-cyan-200' 
+                    : 'bg-slate-700 text-white'}`}
+                >
+                  {phrase}
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         )}
       </div>
