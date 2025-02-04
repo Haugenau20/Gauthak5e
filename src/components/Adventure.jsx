@@ -37,93 +37,155 @@ const Adventure = ({ onBack }) => {
       "Fri til at vandre, fri til at kæmpe!"
     ],
     'Exploration': [
-      "Placeholder1",
-      "Placeholder2",
-      "Placeholder3",
-      "Placeholder4",
-      "Placeholder5"
+      "Thor viser vejen gennem stormen!",
+      "Lad os følge tordenbragene til vores skæbne!",
+      "Enhver sti er en mulighed, når Thor lyser vejen!",
+      "Hvor vinden blæser, der følger vi!",
+      "Der er historier i horisonten, som venter på at blive fortalt!",
+      "Er det et kort? Nej vent, det var bare en gammel madpakke...",
+      "(snubler over en sten) Øh, jeg undersøgte bare jordens kvalitet!",
+      "Se! Et spor! ... Nå nej, det var bare mine egne fodspor...",
+      "Skal vi ikke bare spørge Thor om retningen? Han kan jo se det hele oppe fra!"
     ],
     'Entering New Locations': {
       'Sacred Sites': [
-        "Selv mørket frygter tordenen!",
-        "Lad lynet oplyse vores vej!",
-        "Thor's lys vil guide os!",
-        "Placeholder34",
-        "Placeholder35"
+        "Gudernes hvisken ekkoer gennem disse haller",
+        "Thor's nærvær er stærkt her",
+        "Hellige vægge, modtag en storm-vandrers hilsen",
+        "Dette er et sted hvor himmel møder jord",
+        "Lad os træde varsomt i gudernes fodspor"
       ],
       'Dark Places': [
-        "Mørket kan ikke gemme sig for storm!",
-        "Selv huler ryster når torden kommer!",
-        "Placeholder36",
-        "Placeholder37",
-        "Placeholder38"
+        "Selv mørket frygter tordengudens lys!",
+        "Lad Thor's lyn oplyse vores vej!",
+        "Mørket kan ikke skjule sig for stormens børn!",
+        "Her lugter af gamle hemmeligheder...",
+        "Selv skygger må bøje sig for lynet!",
+        "Øhh... kunne nogen lige tænde en fakkel? For Thor's skyld?",
+        "(nervøst) Var det en rotte eller en dødning? Please sig det var en rotte...",
+        "Hey, hvem puffede til mig?! Nå, det var bare min egen kappe... heh...",
+        "(med rystende stemme) Thor? Du kunne godt sende et lille lyn til belysning, ikke?",
+        "ARGH! ... øh, jeg mener... det var bare en edderkop. En meget LILLE edderkop..."
       ],
       'Settlements': [
-        "Placeholder39",
-        "Placeholder40",
-        "Placeholder41",
-        "Placeholder42",
-        "Placeholder43"
+        "Ah, civilisationens trygge havn!",
+        "Lad os se hvad disse mure gemmer!",
+        "En by fuld af historier og muligheder!",
+        "Her er mennesker at beskytte!",
+        "Thor's velsignelse over dette sted!",
+        "En kro! Endelig!"
       ],
       'Ancient Ruins': [
-        "Placeholder44",
-        "Placeholder45",
-        "Placeholder46",
-        "Placeholder47",
-        "Placeholder48"
+        "Disse sten hvisker gamle sandheder",
+        "Her hviler fortidens storhed",
+        "Selv tiden bøjer sig for disse mure",
+        "Lad os se hvad historien har efterladt",
+        "Gamle sten fortæller de bedste historier",
+        "(læser på en væg) Her står... øh... noget meget vigtigt som jeg ikke kan læse.",
+        "Disse ruiner er mindst tusind år gamle! Eller måske fra i forgårs...",
+        "(ser på en statue uden hoved) Den ligner lidt min gamle arena-mester... især nu uden hoved.",
+        "Se denne ældgamle relikvie! ... Ups, det var vist noget nogen tabte i går.",
+        "Ah, fortidens visdom! (støv falder ned) ... og fortidens støv..."
       ],
       'Natural Caverns': [
-        "Placeholder49",
-        "Placeholder50",
-        "Placeholder51",
-        "Placeholder52",
-        "Placeholder53"
+        "Jordens årer leder os dybere!",
+        "Her gemmer naturen sine hemmeligheder!",
+        "Selv bjergene må dele deres visdom!",
+        "Dybt i jorden findes de største sandheder!",
+        "Lad os se hvad bjergene beskytter!",
+        "(går ind i en stalaktit) Hvem satte den der!?",
+        "Er det et ekko eller er der nogen der efteraber mig?",
+        "(hører dryppende vand) Thor? Er det dig der driller?",
+        "Se! En hule-bjørn! ... Nå nej, bare en meget stor sten.",
+        "(bumper hovedet mod loftet) Hvorfor bygger de disse huler så lave?"
       ]
     },
     'Discovering Treasures': [
-      "Placeholder6",
-      "Placeholder7",
-      "Placeholder8",
-      "Placeholder9",
-      "Placeholder10"
+      "Ah! Thor's gaver skinner klarest!",
+      "En skat værdigt af kampens pris!",
+      "Dette minder mig om arenaens sejrspriser - bare bedre!",
+      "Selv tordenguden smiler ned på denne skat!",
+      "Dette vil fortælle en historie værd at huske!",
+      "Åh! Guld! ... Nej vent, det var bare en messing-skål...",
+      "(pudser ivrigt på en 'skat') Se hvordan d... nå, det var bare støv.",
+      "En magisk ring! ... eller måske bare en gammel dørhåndtag?",
+      "Dette er det mest værdifulde jeg har set! Efter min Thor-amulet selvfølgelig.",
+      "(samler en sten op) Denne sten ligner præcis den første sten jeg samlede op... fordi det ER den første sten..."
     ],
     'Overcoming Obstacles': [
-      "Placeholder11",
-      "Placeholder12",
-      "Placeholder13",
-      "Placeholder14",
-      "Placeholder15"
+      "Som lynet bryder gennem mørket!",
+      "Ingen mur er højere end en Goliaths vilje!",
+      "Dette er intet mod arenaens udfordringer!",
+      "Thor's styrke flyder gennem mine årer!",
+      "Lad tordenen markere vores sejr!",
+      "Thor, giv mig styrke! ... og måske også lidt mere hjerne denne gang.",
+      "Det er ikke en forhindring, det er bare en... meget stor udfordring der står i vejen."
     ],
     'Natural Phenomena': {
       'Thunderstorm': [
-        "Placeholder16",
-        "Placeholder17",
-        "Placeholder18"
+        "Ah! Thor danser over himlen!",
+        "Hør! Min guds latter ruller gennem skyerne!",
+        "Velkommen, gamle ven!",
+        "Nu føler jeg mig hjemme!",
+        "Lad tordenen rense luften!",
+        "(danser rundt i regnen) Thor! Du rammer stadig skævt med lynene, min ven!",
+        "(bliver ramt af et vindstød) Se! Thor vil også lege tagfat!",
+        "FLERE LYN! ... øh, undskyld, jeg blev lidt for ivrig der.",
+        "(hopper begejstret i mudderet) Det er ligesom hjemme i bjergene! Bare mere... mudret!"
       ],
       'Sunny Day': [
-        "Placeholder19",
-        "Placeholder20",
-        "Placeholder21"
+        "Selv Thor må hvile sine hammerslag",
+        "En dag til at samle styrke",
+        "Solens ro før aftenens storm",
+        "Lad os nyde denne fred mens den varer",
+        "En dag uden torden er som en sang uden tromme",
+        "sukker dybt Endnu en dag uden Thor's tordende latter...",
+        "(stirrer længselsfuldt mod den tomme blå himmel) Ikke én eneste lille sky at kalde på...",
+        "(sparker irriteret til en sten) Hvad er en stormens præst uden sine storme?",
+        "(mumler mismodigt) Sol, sol og atter sol... Det er næsten lige så kedeligt som slavemarkedet...",
+        "(råber mod himlen) Thor, min ven, har du glemt mig på denne skyfri dag?!"
       ],
       'Rain': [
-        "Placeholder22",
-        "Placeholder23",
-        "Placeholder24"
+        "Thor's tårer velsigner jorden",
+        "Regnen synger naturens sang",
+        "Vand fra oven renser sjælen",
+        "Selv de mindste dråber bærer kraft",
+        "Hør regnens hvisken!",
+        "Thor, jeg sagde regn, ikke SKYBRUD!",
+        "(gennemblødt) Jeg sagde jeg savnede regn, men ikke SÅ meget!",
+        "(prøver at holde sig tør) Det er bare vand... meget vådt vand...",
+        "Se hvor smukt! (glider i mudderet) ... mindre smukt nu."
       ],
       'Snow': [
-        "Placeholder25",
-        "Placeholder26",
-        "Placeholder27"
+        "Frost-jætternes dans!",
+        "Vinterstormens hvide kappe!",
+        "Thor's kolde åndedrag!",
+        "Se hvordan stormen males hvid!",
+        "Sneen gør verden ny igen!"
       ],
       'Eclipse': [
-        "Placeholder28",
-        "Placeholder29",
-        "Placeholder30"
+        "Selv himmellegemerne må danse!",
+        "Thor holder vejret med resten af os!",
+        "Et sjældent syn selv for en stormens søn!",
+        "Mørket og lyset forenes!",
+        "Se himlens dans!",
+        "Thor, er det dig der piller ved solen igen?",
+        "(stirrer direkte op) Av! Man skulle åbenbart ikke kigge...",
+        "Er det slut snart? Jeg bliver lidt nervøs når solen gemmer sig.",
+        "(til sine rejsefæller) Bare rolig, jeg har set det her før... tror jeg.",
+        "Thor og Sol leger nok bare skjul igen."
       ],
       'Cloudy Day': [
-        "Placeholder31",
-        "Placeholder32",
-        "Placeholder33"
+        "Thor samler sine tropper!",
+        "Skyerne lover eventyr!",
+        "Se! Himlen forbereder sig!",
+        "Snart vil tordenen tale!",
+        "Der brygger noget stort!",
+        "(peger ivrigt på hver eneste sky) Denne ser lovende ud! Nej, denne! NEJ, DENNE!",
+        "(stirrer intenst på skyerne) Kom nu... kom nu... KOM NU! ... Nå, måske ikke.",
+        "Thor, jeg kan se du gemmer dig deroppe! Du kan ikke snyde mig - jeg kan se din kappe!",
+        "(prøver at lokke tordenen frem ved at vifte med sin hammer amulet) Se! Jeg har også en... lille én.",
+        "(mumler utålmodigt) Det er som at vente på at vand koger... BARE LAV NOGET TORDEN!"
       ]
     }
   };

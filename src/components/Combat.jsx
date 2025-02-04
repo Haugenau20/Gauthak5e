@@ -28,18 +28,28 @@ const Combat = ({ onBack, onViewSpells }) => {
       "Fra arenakæmper til Thors hammer!"
     ],
     'During Combat Actions': [
-      "Placeholder1",
-      "Placeholder2",
-      "Placeholder3",
-      "Placeholder4",
-      "Placeholder5"
+      "Mærk tordnens vrede!",
+      "Storm og stål bliver ét!",
+      "Thor våger over denne kamp!",
+      "Lad uvejret komme!",
+      "Som lyn fra klar himmel!",
+      "Jeg er stormens barn!",
+      "Deres blod vil falde som regn!",
+      "Mærk naturens raseri!",
+      "Himlen kalder på sejr!",
+      "Thor giver mig styrke!"  
     ],
     'Critical Hits/Special Moves': [
-      "Placeholder6",
-      "Placeholder7",
-      "Placeholder8",
-      "Placeholder9",
-      "Placeholder10"
+      "Ved tordnens hammerkraft!",
+      "Jeg sender dig til Valhalla!",
+      "Føl himlens vrede!",
+      "Storm og stål forenes i dette slag!",
+      "Thor leder min hånd!",
+      "Din skæbne er forseglet af lynet!",
+      "Arenaens lektioner betales med blod!",
+      "For frihedens torden!",
+      "Mærk kraften fra højlandene!",
+      "Naturens dom er faldet!"
     ],
     'Dealing Damage': [
       "Smag tordengudens kraft!",
@@ -54,11 +64,16 @@ const Combat = ({ onBack, onViewSpells }) => {
       "Din skæbne er forseglet af lynet!"
     ],
     'Battle Victory': [
-      "Placeholder11",
-      "Placeholder12",
-      "Placeholder13",
-      "Placeholder14",
-      "Placeholder15"
+      "Stormens kraft sejrer igen!",
+      "Thor har talt gennem min hammer!",
+      "Sådan falder de svage for tordenen!",
+      "Endnu en sejr for elementerne!",
+      "Som lynet splintrer natten!",
+      "Frihedens pris er betalt i blod!",
+      "Arenaens lektioner glemmes aldrig!",
+      "Stormens barn står ubesejret!",
+      "Thor's vilje er gjort!",
+      "Lad sejrens torden runge!"
     ],
     'Javelin of Lightning': [
       "Zeus Juice",
