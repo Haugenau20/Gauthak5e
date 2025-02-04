@@ -15,48 +15,77 @@ const RitualAndMagic = ({ onBack, onViewSpells }) => {
   const ritualPhrases = {
     'Healing Spells': {
       'Healing Word': [
-        "Thor's styrke flyder gennem mine ord!",
-        "Ved stormens nåde, heles du!",
-        "Mærk himlens helende kraft!",
-        "Rejst af tordenens ekko!",
-        "Lad min stemme bære helbredelse!"
+        "Ved Thors hviskende helbredelse!",
+        "Stormens ord læger dine sår!",
+        "Hør tordnens helende ekko!",
+        "Himlens stemme giver styrke!",
+        "Lynet bærer min helende kraft!",
+        "Hov hov, ingen sovepause endnu!",
+        "Thor siger 'Rejs dig, dovne skabning!'",
+        "En hurtig healing på farten!",
+        "Mine ord healer bedre end min sang!",
+        "Op med dig, det er bare et lille sår!"
       ],
       'Cure Wounds': [
-        "Lad stormens styrke hele dine sår!",
-        "Ved tordenens kraft, rejs dig!",
-        "Thor skænker dig styrke påny!",
-        "Lad regnen vaske dine sår væk!",
-        "Mærk naturens helende kraft!"
+        "Ved stormens helbredende kraft!",
+        "Thor, send din lægende styrke!",
+        "Himlens energi flyder gennem dig!",
+        "Lad lynet forsegle dine sår!",
+        "Mærk tordenens helende hånd!",
+        "Holder du op med at bløde nu?",
+        "Dette kommer måske til at kilder lidt!",
+        "Thor's plaster er på vej!",
+        "Se, næsten lige så god som ny... næsten!",
+        "Ja ja, det er kolde hænder, jeg ved det!"
       ],
       'Lesser Restoration': [
-        "Lad tordenen rense dit sind!",
-        "Ved Thors kraft, være helbredt!",
-        "Stormen vasker dit sind rent!",
-        "Rens som regnen efter uvejret!",
-        "Lad lynet brænde dit mareridt væk!"
+        "Ved Thors rensende kraft!",
+        "Lad stormens renhed hele dig!",
+        "Himlens klarhed vender tilbage!",
+        "Tordenkraftens renselse!",
+        "Ved lysets helbredende styrke!",
+        "Føj, hvad har du dog spist?",
+        "Thor siger du trænger til et bad!",
+        "Dette fjerner alle undskyldninger!",
+        "Puf! Nu er du mindre elendig!"
       ]
     },
     'Restorative Magic': {
       'Dispel Magic': [
-        "Ved stormens kraft, forsvind!",
-        "Thor nægter din magi!",
-        "Blæst væk af naturens kraft!",
-        "Tordenen ophæver din kunst!",
-        "Ved min guds vilje, ophør!"
+        "Ved Thors ophævende kraft!",
+        "Stormens vrede mod falsk magi!",
+        "Tordnens kraft bryder alle bånd!",
+        "Lad lynet opløse denne magi!",
+        "Himlen kræver magiens ophør!",
+        "Ups, var det en vigtig besværgelse?",
+        "Magisk effect goes brrrr... og væk!",
+        "Thor kan ikke lide din magi!",
+        "Puf - tadaa, ingen magi!",
+        "Bare rolig, jeg ødelagde kun det magiske!"
       ],
       'Revivify': [
-        "Thor nægter din død!",
-        "Rejs dig ved stormens kraft!",
+        "Ved Thors livgivende kraft!",
+        "Vend tilbage fra Valhal!",
         "Tordenen kalder dig tilbage!",
-        "Vågn ved lysets glimt!",
-        "Ved himlens kraft, lev igen!"
+        "Himlens lys leder dig hjem!",
+        "Stormens styrke vækker dig!",
+        "Thor siger det ikke er din tid endnu!",
+        "Du skylder mig en øl for dette!",
+        "Godmorgen sovetryne!",
+        "Nå, hvordan var turen til den anden side?",
+        "Død? På min vagt? Nej tak!"
       ],
       'Remove Curse': [
-        "Tordenen renser din forbandelse!",
-        "Ved Thors hammer, være fri!",
-        "Lad stormen vaske din byrde væk!",
-        "Lynet brænder dine lænker!",
-        "Himlen frigør dig fra mørket!"
+        "Ved Thors rensende torden!",
+        "Forbandelsens lænker knuses!",
+        "Himlens vrede mod dette mørke!",
+        "Stormens kraft bryder alle bånd!",
+        "Lynet brænder forbandelsen bort!",
+        "Forbandelse? More like for-væk-else!",
+        "Thor hader også mandage!",
+        "Puf - nu er du mindre forbandet!",
+        "Det var en kedelig forbandelse alligevel!",
+        "Bare rolig, nu er du kun almindelig uheldig!"
       ]
     },
     'Divine Protection': {
@@ -88,51 +117,79 @@ const RitualAndMagic = ({ onBack, onViewSpells }) => {
         "Thor's kraft styrer vandene!",
         "Himlens regn adlyder mig!",
         "Ved stormens magt, bøj dig vand!",
-        "Som torden dirigerer jeg vandene!"
+        "Som torden dirigerer jeg vandene!",
+        "Se mig, jeg er havets dirigent!",
+        "Ved havstormens magt!",
+        "Vandene adlyder min vilje!"
       ],
       'Fog Cloud': [
-        "Tågen kommer på stormens kald!",
-        "Thor's ånde tilslører alt!",
-        "Skyggerne af himlen selv!",
-        "Skjul os i stormens pust!",
-        "Lad tågen være vort skjold!"
+        "Tågens slør tilkalder jeg!",
+        "Ved stormens skjulende kraft!",
+        "Thor, send din skjulende tåge!",
+        "Skyggernes dans begynder!",
+        "Himlens slør sænker sig!",
+        "Ups, jeg kan ikke se en hånd for mig!",
+        "Tåget udsigt med chance for goliath!",
+        "Thor's morgenvækning!",
       ],
       'Water Walk': [
         "Thor gør vejen fast under dine fødder!",
         "Vandene bærer dig som fast grund!",
         "Ved himlens kraft, gå på bølgerne!",
         "Stormens børn frygter ikke dybet!",
-        "Som lynet over vandene skal du gå!"
+        "Som lynet over vandene skal du gå!",
+        "Se mig, jeg er en and!",
+        "Ingen svømmefødder nødvendige!",
+        "Thor's egen gangbro!",
+        "Ups, glem ikke at betale bropenge!",
+        "Bare rolig, jeg har redningsvest på!"
       ],
       'Silence': [
-        "Selv tordenen må hvile!",
-        "Ved Thor's vilje, vær stille!",
-        "Lad stormen falde til ro!",
-        "Stilhed før tordenskredet!",
-        "Fred i stormens øje!"
+        "Ved stormens stilhed!",
+        "Thor kræver ro!",
+        "Lad tavsheden råde!",
+        "Stilhedens slør sænker sig!",
+        "Al lyd må forstumme!",
+        "Shhhhhh!",
+        "Nu holder alle bare deres kæft!",
+        "Thor siger det er sovetid!",
+        "Endelig fred for jeres brok!",
+        "Nå, nu kan jeg ikke høre mig selv tale!"
       ]
     },
     'Divine Insight': {
       'Clairvoyance': [
-        "Thor's øje ser i det fjerne!",
-        "Ved himlens blik, vis mig!",
+        "Ved Thors alseende øje!",
         "Stormens øje ser alt!",
-        "Tordenkigger jeg gennem skyerne!",
-        "Lad lynet oplyse det skjulte!"
+        "Himlens blik rækker vidt!",
+        "Lynet oplyser det skjulte!",
+        "Tordnens syn gennemtrænger alt!",
+        "Lad mig lige tjekke min krystalkugle!",
+        "Thor's egen kikkert!",
+        "Nysgerrig? Jeg? Aldrig!",
+        "Se mor, ingen hænder!"
       ],
       'Speak with Dead': [
-        "Ved Thor's hammer, tal!",
-        "Fra Valhalla's haller, svar mig!",
-        "Jeg kalder dig fra skyggerne!",
-        "Tordenen vækker de døde!",
-        "Fortæl mig, du som hviler!"
+        "Ved forfædrenes minde!",
+        "Thor åbner dødens port!",
+        "Hør de dødes hvisken!",
+        "Valhal låner os din stemme!",
+        "Gennem sløret taler vi!",
+        "Thor's telefonlinje til Helheim!",
+        "Nå, hvordan går det dernede?",
+        "Ring ring, er der nogen hjemme?",
+        "Dette er en meget ensidig samtale!"
       ],
       'Divination': [
-        "Thor, vis mig din visdom!",
-        "Stormens varsler taler til mig!",
-        "Ved lynet, oplys min vej!",
+        "Ved Thors alvidende visdom!",
+        "Stormens syner viser vejen!",
         "Himlens tegn åbenbares!",
-        "Tordenen fortæller sandheden!"
+        "Tordnens varsler taler!",
+        "Lynet oplyser fremtidens sti!",
+        "Lad mig spørge min ven i skyerne!",
+        "Thor's vejrudsigt kommer her!",
+        "Breaking news fra fremtiden!",
+        "Spå i tordenskyer? Selvfølgelig virker det!"
       ]
     },
     'Holy Blessings': {
