@@ -16,59 +16,136 @@ const ChallengeAndTriumph = ({ onBack }) => {
   const skillChecks = {
     'Athletics': {
       success: [
-        "Placeholder1",
-        "Placeholder2",
-        "Placeholder3",
-        "Placeholder4",
-        "Placeholder5"
+        "Thor's styrke flyder gennem mine årer!",
+        "Ved stormens kraft, ingen vægt er for tung!",
+        "Som tordenen selv, knuser jeg alle hindringer!",
+        "Lad musklerne tale stormes sprog!",
+        "I areanen lærte jeg sejrens pris!",
+        "Ha! Lettere end at løfte en regnsky!",
+        "Selv Thor ville være misundelig på disse muskler!",
+        "Bare en almindelig morgenøvelse for en storm-præst!",
+        "Det her? Det er bare en opvarmning!",
+        "Selv mine biceps har biceps!"
       ],
       failure: [
-        "Placeholder6",
-        "Placeholder7",
-        "Placeholder8",
-        "Placeholder9",
-        "Placeholder10"
+        "Selv Thor's styrke svigter til tider!",
+        "Mine lænkers minder tynger stadig!",
+        "Stormens kraft undviger mig i dag!",
+        "Arenaens ar føles tungere nu!",
+        "Musklerne er trætte som vindstille skyer!",
+        "Åh nej, mine arme er blevet til spaghetti!",
+        "Thor må have lånt al min styrke i dag!",
+        "Nogen må have smurt fedtstof på mine hænder!",
+        "Min hammer vejer vist dobbelt i dag!",
+        "Er det ikke på tide med en pause?"
       ]
     },
     'Acrobatics': {
       success: [
-        "Placeholder11",
-        "Placeholder12",
-        "Placeholder13",
-        "Placeholder14",
-        "Placeholder15"
+        "Let som lynet gennem luften!",
+        "Storm-ånden guider mine bevægelser!",
+        "Ingen lænker kan holde mig tilbage!",
+        "Jeg danser med vinden selv!",
+        "Frihedens dans er min styrke!",
+        "Se! En flyvende goliath - det troede I ikke var muligt!",
+        "Hvem sagde goliather ikke kan danse?",
+        "Ups, det var faktisk ikke meningen!",
+        "Som en gazelle... bare meget, meget større!",
+        "Thor gav mig vinger... eller måske var det bare held!"
       ],
       failure: [
-        "Placeholder76",
-        "Placeholder77",
-        "Placeholder78",
-        "Placeholder79",
-        "Placeholder80"
+        "Vinden bærer mig ikke i dag!",
+        "Stormens nåde svigter mig!",
+        "Tyngdekraften er en brutal fjende!",
+        "Nogle dage er jorden en hård læremester!",
+        "Min krop husker stadig slaveriets tyngde!",
+        "Se! Jeg opfandt en ny dans... av!",
+        "Er der nogen der så hvor min værdighed blev af?",
+        "Jorden kommer tættere på end forventet!",
+        "Jeg ville bare kramme gulvet!",
+        "Thor, du kunne godt have advaret mig!",
       ]
     },
     'Investigation': {
       success: [
-        "Placeholder81",
-        "Placeholder82",
-        "Placeholder83",
-        "Placeholder84",
-        "Placeholder85"
+        "Ved tordengudens visdom ser jeg sandheden!",
+        "Stormens øje afslører alle hemmeligheder!",
+        "Ingen gåde modstår min søgen!",
+        "Som lynet oplyser natten, finder jeg svaret!",
+        "Vejrets tegn viser mig vejen!",
+        "Se! Jeg fandt noget",
+        "Thor hvisker svarene i mit øre",
+        "Detektiv Gauthak er på sagen!",
       ],
       failure: [
-        "Placeholder86",
-        "Placeholder87",
-        "Placeholder88",
-        "Placeholder89",
-        "Placeholder90"
+        "Stormens øje er blindet!",
+        "Sandheden gemmer sig i skyggerne!",
+        "Tordenen overdøver mine tanker!",
+        "Nogle gåder forbliver uløste!",
+        "Vejrets tegn er slørede i dag!",
+        "Er dette et spor? Nej, bare min egen fodspor... igen!",
+        "Hvis bare spor lyste op som lyn!",
+        "Jeg er ikke forvirret, jeg er... jo, jeg er forvirret!",
+        "Thor, dine tegn er lige så klare som mudder!",
+        "Måske skulle jeg have taget mine briller på... hvis jeg havde nogen!"
+      ]
+    },
+    'Religion': {
+      success: [
+        "Thor's visdom strømmer gennem mig!",
+        "Ved tordenkræfternes magt!",
+        "Gudernes veje er klare som lyn!",
+        "Stormenes herre viser vejen!",
+        "I tordenen hører jeg den guddommelige sandhed!",
+        "Thor sagde ja!",
+        "Jeg konsulterer de høje magter... og min mavefornemmelse!",
+        "Thor's humor er som tordenvejr - nogle gange rammer det plet!"
+      ],
+      failure: [
+        "Thor's visdom undviger min forståelse!",
+        "Gudernes veje er tilslørede!",
+        "Stormens budskab er uklart!",
+        "Min tro vakler som vinden!",
+        "Tordenen taler, men jeg forstår ikke!",
+        "Thor må være på ferie!",
+        "Var det et tegn? Nej, bare hovedpine!",
+        "Undskyld, dårlig forbindelse til det guddommelige!",
+        "Thor, kunne du tale lidt højere?",
+        "Jeg burde virkelig have læst den hellige bog til ende!"
+      ]
+    },
+    'Performance': {
+      success: [
+        "Hør min stemme rulle som torden!",
+        "Mit brøl er stormens sang!",
+        "Lyt til frihedens ekko!",
+        "Arenaens ånd lever i mine ord!",
+        "Som storm og torden, sådan er min tale!",
+        "Jeg kendte engang en joke om Thor... men jeg har glemt pointen!",
+        "Se mig jonglere med mine tordenkiler!",
+        "Denne sang dedikerer jeg til min yndlings-stormsky!",
+        "Applaus! Eller var det bare torden?"
+      ],
+      failure: [
+        "Min stemme er som en hvisken i stormen!",
+        "Ordene dør på mine læber!",
+        "Ikke alle kampe vindes med ord!",
+        "Arenanes kraft svigter mig!",
+        "Stormens sang bliver til stilhed!",
+        "Var det torden I hørte? Nej, bare min maven!",
+        "Det lød bedre i mit hoved!",
+        "Er der nogen der har set min stemme?",
+        "Det var bare opvarmningen... tror jeg!",
+        "Thor, du lovede at bakke mig op med dramatisk torden!"
       ]
     },
     'General': {
       success: [
-        "Placeholder91",
-        "Placeholder92",
-        "Placeholder93",
-        "Placeholder94",
-        "Placeholder95"
+        "Ved stormens vrede!",
+        "Thor's vilje ske!",
+        "Triumf over tyranni!",
+        "Frihedens torden ruller!",
+        "Stormens kraft er min!"
       ],
       failure: [
         "Placeholder96",
@@ -82,28 +159,100 @@ const ChallengeAndTriumph = ({ onBack }) => {
 
   const savingThrows = {
     'Strength': {
-      success: ["Placeholder16", "Placeholder17", "Placeholder18", "Placeholder19", "Placeholder20"],
-      failure: ["Placeholder21", "Placeholder22", "Placeholder23", "Placeholder24", "Placeholder25"]
+      success: [
+        "Placeholder16", 
+        "Placeholder17", 
+        "Placeholder18", 
+        "Placeholder19", 
+        "Placeholder20"
+      ],
+      failure: [
+        "Placeholder21", 
+        "Placeholder22", 
+        "Placeholder23", 
+        "Placeholder24", 
+        "Placeholder25"
+      ]
     },
     'Dexterity': {
-      success: ["Placeholder26", "Placeholder27", "Placeholder28", "Placeholder29", "Placeholder30"],
-      failure: ["Placeholder31", "Placeholder32", "Placeholder33", "Placeholder34", "Placeholder35"]
+      success: [
+        "Placeholder26", 
+        "Placeholder27",
+        "Placeholder28", 
+        "Placeholder29", 
+        "Placeholder30"
+      ],
+      failure: [
+        "Placeholder31", 
+        "Placeholder32", 
+        "Placeholder33", 
+        "Placeholder34", 
+        "Placeholder35"
+      ]
     },
     'Constitution': {
-      success: ["Placeholder36", "Placeholder37", "Placeholder38", "Placeholder39", "Placeholder40"],
-      failure: ["Placeholder41", "Placeholder42", "Placeholder43", "Placeholder44", "Placeholder45"]
+      success: [
+        "Placeholder36", 
+        "Placeholder37", 
+        "Placeholder38", 
+        "Placeholder39", 
+        "Placeholder40"
+      ],
+      failure: [
+        "Placeholder41", 
+        "Placeholder42", 
+        "Placeholder43", 
+        "Placeholder44", 
+        "Placeholder45"
+      ]
     },
     'Intelligence': {
-      success: ["Placeholder46", "Placeholder47", "Placeholder48", "Placeholder49", "Placeholder50"],
-      failure: ["Placeholder51", "Placeholder52", "Placeholder53", "Placeholder54", "Placeholder55"]
+      success: [
+        "Placeholder46", 
+        "Placeholder47", 
+        "Placeholder48", 
+        "Placeholder49", 
+        "Placeholder50"
+      ],
+      failure: [
+        "Placeholder51", 
+        "Placeholder52", 
+        "Placeholder53", 
+        "Placeholder54", 
+        "Placeholder55"
+      ]
     },
     'Wisdom': {
-      success: ["Placeholder56", "Placeholder57", "Placeholder58", "Placeholder59", "Placeholder60"],
-      failure: ["Placeholder61", "Placeholder62", "Placeholder63", "Placeholder64", "Placeholder65"]
+      success: [
+        "Placeholder56", 
+        "Placeholder57", 
+        "Placeholder58", 
+        "Placeholder59", 
+        "Placeholder60"
+      ],
+      failure: [
+        "Placeholder61", 
+        "Placeholder62", 
+        "Placeholder63", 
+        "Placeholder64", 
+        "Placeholder65"
+      ]
     },
     'Charisma': {
-      success: ["Placeholder66", "Placeholder67", "Placeholder68", "Placeholder69", "Placeholder70"],
-      failure: ["Placeholder71", "Placeholder72", "Placeholder73", "Placeholder74", "Placeholder75"]
+      success: [
+        "Placeholder66", 
+        "Placeholder67", 
+        "Placeholder68", 
+        "Placeholder69", 
+        "Placeholder70"
+      ],
+      failure: [
+        "Placeholder71", 
+        "Placeholder72", 
+        "Placeholder73", 
+        "Placeholder74", 
+        "Placeholder75"
+      ]
     }
   };
 
