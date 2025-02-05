@@ -141,18 +141,28 @@ const ChallengeAndTriumph = ({ onBack }) => {
     },
     'General': {
       success: [
-        "Ved stormens vrede!",
-        "Thor's vilje ske!",
-        "Triumf over tyranni!",
-        "Frihedens torden ruller!",
-        "Stormens kraft er min!"
+        "Thor's kraft flyder gennem mine årer!",
+        "Stormens præcision er min styrke!",
+        "Arenaen lærte mig dette trick!",
+        "Som lynet selv, præcist og kraftfuldt!",
+        "Højlandenes visdom viser vejen!",
+        "Ha! Jeg så faktisk hvor jeg sigtede denne gang!",
+        "Thor klappede! Det var derfor det tordnede!",
+        "Se mor, ingen hammer... denne gang!",
+        "Sådan gør vi det i tordenvejr!",
+        "Prøvede jeg at gøre det? Ja! Gjorde jeg det? JA!"
       ],
       failure: [
-        "Placeholder96",
-        "Placeholder97",
-        "Placeholder98",
-        "Placeholder99",
-        "Placeholder100"
+        "Thor's vejledning svigter mig i dag...",
+        "Stormens kraft er ikke med mig denne gang",
+        "Selv en goliath kan snuble på sin vej",
+        "Mine hænder er tunge som regnfyldte skyer",
+        "Arenaens lektioner fejler mig nu",
+        "Ups... det var ikke sådan det så ud i mit hoved!",
+        "Er det her det rigtige tidspunkt at skylde på tordenvejr?",
+        "Thor må have nyset lige da jeg prøvede!",
+        "Nå ja... jeg gjorde det med vilje... helt sikkert!",
+        "Måske hvis jeg bare lader som ingenting skete..."
       ]
     }
   };
@@ -160,98 +170,158 @@ const ChallengeAndTriumph = ({ onBack }) => {
   const savingThrows = {
     'Strength': {
       success: [
-        "Placeholder16", 
-        "Placeholder17", 
-        "Placeholder18", 
-        "Placeholder19", 
-        "Placeholder20"
+        "Thor's styrke flyder gennem mine årer!",
+        "Lad mig vise jer en gladiators kraft!",
+        "Mine lænker kunne ikke holde mig, det kan du heller ikke!",
+        "Storm og stål har hærdet mine muskler!",
+        "Selv bjerge må bøje sig for min styrke!",
+        "Ha! Du slår som en sur sky!",
+        "Er det det bedste du har? Min bedstemor slår hårdere!",
+        "Jeg har løftet tungere ting til morgenmad!",
+        "Åh nej, nu tabte jeg min hammer... SIKE!",
+        "Prøv igen når du har spist dine grøntsager!"
       ],
       failure: [
-        "Placeholder21", 
-        "Placeholder22", 
-        "Placeholder23", 
-        "Placeholder24", 
-        "Placeholder25"
+        "Thor's styrke svigter mig!",
+        "Mine muskler... de svarer ikke!",
+        "Arenaens styrke er forduftet!",
+        "Stormens kraft... hvor er du?",
+        "Mine lænker føles tunge igen...",
+        "Er nogen kommet til at smøre mine muskler ind i smør?",
+        "Åh nej, jeg glemte at spise min havregrød i morges!",
+        "Mine arme er blevet til kogte spaghetti!",
+        "Hvem har stjålet mine muskler mens jeg sov?",
+        "Er det her det rigtige tidspunkt at tage en lur?"
       ]
     },
     'Dexterity': {
       success: [
-        "Placeholder26", 
-        "Placeholder27",
-        "Placeholder28", 
-        "Placeholder29", 
-        "Placeholder30"
+        "Hurtig som lynet selv!",
+        "Dans med stormen, undgå døden!",
+        "En gladiator lærer at danse eller dø!",
+        "Lynets hastighed er min ven!",
+        "Stormens vinger bærer mig!",
+        "Ups, jeg snublede... MEN MED STIL!",
+        "Dansen går bedre med tordenvejr!",
+        "Se mig hoppe som en glad ged!",
+        "Hvem satte en banan der? Nå ja, det var mig!",
+        "Jeg er let på tå for en klippe!"
       ],
       failure: [
-        "Placeholder31", 
-        "Placeholder32", 
-        "Placeholder33", 
-        "Placeholder34", 
-        "Placeholder35"
+        "Fandens glatte gulv!",
+        "Stormen blæste den forkerte vej!",
+        "Mine fødder er tungere end mit hjerte!",
+        "Bevægelse som en klodset bjørn!",
+        "Thor's lyn ramte ved siden af!",
+        "Se mig danse! Nej vent, det var et fald...",
+        "Jeg kysser jorden... med ansigtet!",
+        "Min yndlings-dans: Den Faldende Goliath!",
+        "Jorden kom op og hilste på!",
+        "Jeg faldt med stil... tror jeg nok!"
       ]
     },
     'Constitution': {
       success: [
-        "Placeholder36", 
-        "Placeholder37", 
-        "Placeholder38", 
-        "Placeholder39", 
-        "Placeholder40"
+        "Hærdet af torden, styrket af storm!",
+        "Arenaens ar har gjort mig stærkere!",
+        "Mit hjerte slår som tordenbrag!",
+        "Stormens udholdenhed er min!",
+        "Jeg står fast som bjerget selv!",
+        "Av! ... Det kilede bare!",
+        "Er det en kølle eller en fjerkost?",
+        "Min mave er hårdere end dit våben!",
+        "Det føles som et myggestik!",
+        "Jeg har haft værre tømmermænd!"
       ],
       failure: [
-        "Placeholder41", 
-        "Placeholder42", 
-        "Placeholder43", 
-        "Placeholder44", 
-        "Placeholder45"
+        "Det... det gjorde faktisk ondt!",
+        "Min rustning er lavet af papir i dag!",
+        "Av, av, av... det mærkes!",
+        "Selv bjerge kan knække!",
+        "Stormens styrke har forladt mig!",
+        "Min rustning må være krympet i vask!",
+        "Er det en drage eller bare min mave der rumler?",
+        "Jeg skulle ikke have spist den sidste kylling!",
+        "Min mave er blevet til budding!",
+        "Er helbredsdrikke udløbet? Det smager sådan!"
       ]
     },
     'Intelligence': {
       success: [
-        "Placeholder46", 
-        "Placeholder47", 
-        "Placeholder48", 
-        "Placeholder49", 
-        "Placeholder50"
+        "Thor's visdom lyser vejen!",
+        "Arenaens lektioner glemmes aldrig!",
+        "Klog på kampens kunst!",
+        "Stormens mønstre taler til mig!",
+        "Erfaring er den bedste læremester!",
+        "Jeg tænkte så hårdt, mit skæg krusede sig!",
+        "To plus to er... øh... TORDEN!",
+        "Den sværeste kamp er mod regnestykker!",
+        "Jeg er klogere end jeg ser ud... hvilket ikke siger meget!",
+        "Hvem behøver hjerne når man har biceps?"
       ],
       failure: [
-        "Placeholder51", 
-        "Placeholder52", 
-        "Placeholder53", 
-        "Placeholder54", 
-        "Placeholder55"
+        "Min hjerne er tåget som en regnsky!",
+        "Tankerne forsvinder som vinden!",
+        "Det var for mange ord på én gang!",
+        "Thor's visdom... hvor blev du af?",
+        "Arena-uddannelsen slår ikke til her!",
+        "Hjernen er gået på ferie uden at sige farvel!",
+        "To plus to er... en hammer?",
+        "Mine tanker er løbet tør for torden!",
+        "Er det her en test? Jeg hader tests!",
+        "Min sidste hjernecelle råber om hjælp!"
       ]
     },
     'Wisdom': {
       success: [
-        "Placeholder56", 
-        "Placeholder57", 
-        "Placeholder58", 
-        "Placeholder59", 
-        "Placeholder60"
+        "Stormens øje ser sandheden!",
+        "Thor's visdom gennemstrømmer mig!",
+        "Højlandenes visdom er min styrke!",
+        "Jeg ser hvad uvejret gemmer!",
+        "Frihedens pris har lært mig meget!",
+        "Thor sagde... noget klogt... tror jeg!",
+        "Jeg konsulterede skyerne... de grinte!",
+        "Min visdom kommer i stormkast!",
+        "Jeg så det komme... efter det ramte!",
+        "Meditation er bare en power-lur!"
       ],
       failure: [
-        "Placeholder61", 
-        "Placeholder62", 
-        "Placeholder63", 
-        "Placeholder64", 
-        "Placeholder65"
+        "Blind som en flagermus i tordenvejr!",
+        "Stormens øje er sløret!",
+        "Thor's vejledning... jeg hører dig ikke!",
+        "Visdommen forsvandt med vinden!",
+        "Jeg burde have lyttet til skyerne!",
+        "Thor snakker... men jeg har propperne i!",
+        "Er det klogskab eller bare hovedpine?",
+        "Mine instinkter siger... åh, for sent!",
+        "Visdommen kommer altid fem minutter for sent!",
+        "Jeg spurgte skyerne, men de grinte bare!"
       ]
     },
     'Charisma': {
       success: [
-        "Placeholder66", 
-        "Placeholder67", 
-        "Placeholder68", 
-        "Placeholder69", 
-        "Placeholder70"
+        "Min stemme bærer tordens kraft!",
+        "Hør en fri goliaths ord!",
+        "Stormens kraft er i mine ord!",
+        "Arena-championens ord er lov!",
+        "Thor's torden taler gennem mig!",
+        "Mit smil er som lyn - blændende!",
+        "Jeg charmerede engang en storm... tror jeg!",
+        "Mine jokes slår hårdere end min hammer!",
+        "Er det torden eller bare min latter?",
+        "Selv Thor synes jeg er for højrøstet!"
       ],
       failure: [
-        "Placeholder71", 
-        "Placeholder72", 
-        "Placeholder73", 
-        "Placeholder74", 
-        "Placeholder75"
+        "Mine ord er som vindstille luft!",
+        "Torden blev til en hvisken!",
+        "Selv en sten er mere overbevisende!",
+        "Thor's stemme har forladt mig!",
+        "Mine ord falder til jorden!",
+        "Min tunge er blevet til en regnorm!",
+        "Selv en sten er mere charmerende!",
+        "Er det her det rigtige tidspunkt at blive genert?",
+        "Mine jokes druknede i regnen!",
+        "Thor's torden overdøvede min punchline!"
       ]
     }
   };
@@ -259,50 +329,77 @@ const ChallengeAndTriumph = ({ onBack }) => {
   const otherCategories = {
     'Breaking Free': {
       'From Restraints': [
-        "Placeholder31",
-        "Placeholder32",
-        "Placeholder33",
-        "Placeholder34",
-        "Placeholder35"
+        "Ingen lænker kan holde stormens kraft!",
+        "Frihedens kald er stærkere end stål!",
+        "Som lynet bryder jeg gennem mine bånd!",
+        "Lænker er bare minder fra fortiden!",
+        "Thor's styrke bryder alle bånd!",
+        "Ups, var de lænker vigtige for jer?",
+        "De kalder mig Gauthak Lænkeknuser... og røvkløver!",
+        "Er det her jeres bedste reb? Min bedstemor binder bedre!",
+        "Tadaa! Og jeg brugte ikke engang smør denne gang!",
+        "Måske skulle I prøve med noget kraftigere end spaghetti!"
       ],
       'From Control': [
-        "Placeholder36",
-        "Placeholder37",
-        "Placeholder38",
-        "Placeholder39",
-        "Placeholder40"
+        "Min vilje er som en ustoppelig storm!",
+        "Ingen herre ejer tordenens søn!",
+        "Frihedens storm raser i mit hjerte!",
+        "Mit sind er mit eget, min kraft er fri!",
+        "Som vinden selv, kan jeg ikke fanges!",
+        "Din kontrol er lige så stærk som en våd vaskeklud!",
+        "Prøv at styr en tornado næste gang, det er nemmere!",
+        "Du kan ikke tæmme en storm... eller en Gauthak!",
+        "Mind control? More like mild control!",
+        "Ha! Jeg kontrollerer knap nok mig selv!"
       ]
     },
     'Overcoming Odds': {
       'Against Many': [
-        "Placeholder41",
-        "Placeholder42",
-        "Placeholder43",
-        "Placeholder44",
-        "Placeholder45"
+        "Jo flere fjender, jo større tordenbrag!",
+        "En storm frygter ikke regnens dråber!",
+        "Arenaen lærte mig at danse med døden!",
+        "I står mange, jeg står med Thor!",
+        "Lad stormen komme, jeg står endnu!",
+        "Er I sikre på I ikke vil hente flere? Det her er for nemt!",
+        "Jeg har set værre odds i en kortspil!",
+        "Kom nu, selv min mormor kæmper bedre... og hun er en sten!",
+        "Er det her en kamp eller en gruppekrammer?",
+        "Jeg tæller jer som en halv udfordring... tilsammen!"
       ],
       'Against the Impossible': [
-        "Placeholder46",
-        "Placeholder47",
-        "Placeholder48",
-        "Placeholder49",
-        "Placeholder50"
+        "Det umulige er bare en udfordring fra Thor!",
+        "Selv bjerge flytter sig for stormens vilje!",
+        "Hvor der er torden, er der en vej!",
+        "Det umulige kender ikke min styrke!",
+        "Selv guderne må bøje sig for viljens kraft!",
+        "Umuligt? Det er bare et andet ord for 'sjovt'!",
+        "Thor sagde det var umuligt... så jeg gjorde det dobbelt!",
+        "Jeg spiser umuligt til morgenmad!",
+        "Det var sværere at få sokker på i morges!",
+        "Ha! Jeg har set værre odds i en madkonkurrence!"
       ]
     },
     'Personal Victories': {
       'Achievement': [
-        "Placeholder51",
-        "Placeholder52",
-        "Placeholder53",
-        "Placeholder54",
-        "Placeholder55"
+        "Thor's hammer guide min sejr!",
+        "Stormens kraft flyder stærkt i dag!",
+        "Sejren brøler som torden!",
+        "Fra arena-slave til stormens mester!",
+        "Min styrke vokser med hver sejr!",
+        "Jeg er faktisk selv overrasket over den her!",
+        "Succes smager bedre end morgenmad!",
+        "Var det det hele? Jeg var lige ved at varme op!"
       ],
       'Growth': [
-        "Placeholder56",
-        "Placeholder57",
-        "Placeholder58",
-        "Placeholder59",
-        "Placeholder60"
+        "Jeg vokser som stormen selv!",
+        "Hver prøvelse gør mig stærkere!",
+        "Thor's visdom vokser i mig!",
+        "Fra lænker til lynets kraft!",
+        "Min sjæl er stærkere end nogensinde!",
+        "Se! Jeg lærte noget nyt... tror jeg nok!",
+        "Min hjerne har muskler nu!",
+        "Fra dum som en sten til dum som en klog sten!",
+        "Thor's visdom rammer som et lyn... av!"
       ]
     }
   };
